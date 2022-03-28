@@ -29,5 +29,23 @@ public class Program{
         foreach(int num in mylist)
             Console.Write("{0} ", num);
         Console.WriteLine(" ");
+        
+        Console.WriteLine("remove range elements in the list");
+        mylist.RemoveRange(4, 3);  //index, count
+        foreach(int num in mylist)
+            Console.Write("{0} ", num);
+        Console.WriteLine(" ");
+        Console.WriteLine("Count of Elements = {0}", mylist.Count);
+        
+        Console.WriteLine("remove all elements in the list");
+        mylist.RemoveAll(x=> x%3==0); 
+        foreach(int num in mylist)
+            Console.Write("{0} ", num);
+        Console.WriteLine(" ");
+        Console.WriteLine("Count of Elements = {0}", mylist.Count);
+        
+        Console.WriteLine("clear the list");
+        mylist.Clear();
+        Console.WriteLine("Count of Elements = {0}", mylist.Count);
     }
 }
