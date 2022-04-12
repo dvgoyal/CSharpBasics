@@ -1,0 +1,16 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        int[][] arr = new int [2][];
+        arr[0] = new int[2]{1, 2};
+        arr[1] = new int[3]{4, 5, 6};
+        foreach(int[] subarr in arr){
+            foreach(int i in subarr)
+                Console.Write("{0}  ", i);
+            Console.WriteLine();
+        }
+    }
+}
