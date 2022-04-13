@@ -1,0 +1,29 @@
+using System;
+
+public class StringApplication{
+	public static void Main(string[] args){
+		string fname = "Divya";
+		string lname = "Goyal";
+		Console.WriteLine(fname + " " + lname);
+		Console.WriteLine(fname.Length);
+		
+		char[] arr = new char[5]{'h', 'e', 'l', 'l', 'o'};
+		string msg1 = new String(arr);
+		Console.WriteLine(msg1);
+		
+		string[] strarr = new string[]{"you", "are", "welcome"};
+		string msg2 = String.Join(" ", strarr);
+		Console.WriteLine(msg2);
+		
+		string msg3 = String.Join("*", arr);
+		Console.WriteLine(msg3);
+		
+		int[] intarr = new int[]{1, 2, 3, 4, 5};
+		string msg4 = String.Join("", intarr);
+		Console.WriteLine(msg4);
+		
+		DateTime timestamp = new DateTime(2022, 04, 13, 11, 56, 00);
+		string msg5 = String.Format("Message sent at {0:t} on {0:D}", timestamp);
+		Console.WriteLine(msg5);
+	}
+}
