@@ -1,0 +1,19 @@
+using System;
+public class StringApplication{
+	public static void Main(string[] args){
+		string str1 = "This is test";
+		string str2 = "This is text";
+		if(str1.CompareTo(str2) == 0 )
+			Console.WriteLine("strings are equal");
+		else
+			Console.WriteLine("strings are not equal");
+		
+		if(str1.Contains("test"))
+			Console.WriteLine("subtext found");
+		else
+			Console.WriteLine("subtext not found");
+		
+		string str3 = str1.Substring(8,4);
+		Console.WriteLine(str3);
+	}
+}
